@@ -1,9 +1,22 @@
-import React from 'react'
+import { StyleSheet, View } from 'react-native';
 
 const ContainerTop = () => {
   return (
-    <div>ContainerTop</div>
-  )
-}
+    <View style= {styles.container}>
 
-export default ContainerTop
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      backgroundColor: '#000'
+    },
+  });
+
+export default ContainerTop;
