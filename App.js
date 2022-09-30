@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import ContainerBottom from './components/ContainerBottom';
+import ContainerTop from './components/ContainerTop';
 
-export default function App() {
+export default App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <ContainerTop />
+      <ContainerBottom />
     </View>
   );
 }
